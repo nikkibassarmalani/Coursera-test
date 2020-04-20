@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family : Helvetica
+
+}
+h1 {
+      text-align: center;
+      color: black;
+
+
+}
+.row{
+    
+     width: 100%
+}
+section {
+    border: 1px solid black;
+    background-color: #b5c4d2;
+    margin: 10px;
+}
+@media (max-width: 767px)
+.col-sm-12 {
+    width: 100%;
+}
+@media (max-width: 767px)
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+section.Henri>h2 {
+    background-color: rosybrown;
+}
+section>h2 {
+    float: right;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0;
+    width: 230px;
+    text-align: center;
+    font-style: Times;
+    font-size: 24px;
+    font-weight: bold;
+    height: 45px;
+    padding-top: 10px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+section>p {
+    padding: 40px 15px 15px 15px;
+}
+section.Venice>h2 {
+    background-color: aquamarine;
+}
+section.Nikolai>h2 {
+    color: #e2e2e2;
+    background-color: orchid;
+}
