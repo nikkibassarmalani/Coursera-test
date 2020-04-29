@@ -1,14 +1,14 @@
-(function(){
-  var helloSpeaker={};
-  var byeSpeaker = {};
+(function(window){
+  //var helloSpeaker={};
+  //var byeSpeaker = {};
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  for(var i=0 ; i<names.length;i++)
+  for(var i in names)
   {
-    var firstLetter = names[i].charAt(0).toLowerCase();
-    if(firstLetter==='j'){
-      byeSpeaker.speak(names[i]);
+    var firstLetter = ((names[i]).charAt(0)).toLowerCase();
+    if(firstLetter=='j'){
+      window.byeSpeaker.speak(names[i]);
     }else{
-      helloSpeaker.speak(names[i]);
+      window.helloSpeaker.speak(names[i]);
     }
   }
-})();
+})(window);
