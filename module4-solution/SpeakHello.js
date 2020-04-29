@@ -1,10 +1,11 @@
 (function(window){
+    var helloSpeaker={};
 
 var speakWord = "Hello";
 
- var helloSpeaker = function speak (names){
-console.log(speakWord+" "+names[i]);
-};
+   helloSpeaker.speak = function (name){
+console.log(speakWord+" "+name);
+}
 
 window.helloSpeaker = helloSpeaker;
 
